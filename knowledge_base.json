@@ -1,0 +1,102 @@
+{
+  "html_conocimiento": {
+    "introduccion": {
+      "que_es_html": {
+        "descripcion": "HTML, que significa HyperText Markup Language (Lenguaje de Marcado de Hipertexto), es el código fundamental que se usa para crear y estructurar el contenido de las páginas web. No es un lenguaje de programación, sino un lenguaje de marcado que utiliza etiquetas para definir elementos como títulos, párrafos e imágenes."
+      },
+      "proposito_principal": {
+        "descripcion": "El propósito principal de HTML es dar estructura y significado semántico al contenido de una web. Le dice al navegador cómo mostrar el texto, dónde poner las imágenes y cómo enlazar a otras páginas. Es el esqueleto sobre el cual se construyen los sitios web."
+      }
+    },
+    "estructura_basica": {
+      "descripcion_general": {
+        "descripcion": "Todo documento HTML sigue una estructura jerárquica básica. Comienza con una declaración de tipo de documento (DOCTYPE) y luego el elemento raíz `<html>`, que contiene un `<head>` (para metadatos no visibles) y un `<body>` (para el contenido visible)."
+      },
+      "elementos_esenciales": [
+        {
+          "etiqueta": "<!DOCTYPE html>",
+          "descripcion": "Esta declaración, que siempre debe ir primero, le dice al navegador que el documento es de tipo HTML5. Asegura que la página se renderice de manera consistente en todos los navegadores."
+        },
+        {
+          "etiqueta": "<html>",
+          "descripcion": "Es el elemento raíz que envuelve todo el contenido de la página. El atributo `lang` se usa dentro de esta etiqueta para especificar el idioma principal del documento, por ejemplo, `<html lang=\"es\">`."
+        },
+        {
+          "etiqueta": "<head>",
+          "descripcion": "La sección 'head' contiene metadatos cruciales para el navegador y los motores de búsqueda, pero no es visible para el usuario. Aquí se colocan el título de la página `<title>`, enlaces a hojas de estilo CSS y la configuración de caracteres como `<meta charset=\"UTF-8\">`."
+        },
+        {
+          "etiqueta": "<body>",
+          "descripcion": "La sección 'body' contiene todo el contenido que el usuario ve en la pantalla: textos, imágenes, videos, enlaces, formularios, etc. Es donde vive la estructura visible de la página web."
+        }
+      ]
+    },
+    "etiquetas_de_texto_comunes": [
+      {
+        "etiqueta": "<h1> a <h6>",
+        "descripcion": "Estas etiquetas se usan para definir encabezados o títulos. `<h1>` es el nivel más alto y más importante (usualmente el título principal de la página), y `<h6>` es el de menor importancia. Son cruciales para la jerarquía del contenido y el SEO."
+      },
+      {
+        "etiqueta": "<p>",
+        "descripcion": "La etiqueta `<p>` se utiliza para definir párrafos de texto. El navegador automáticamente añade un espacio antes y después de cada párrafo, separando los bloques de texto para una mejor legibilidad."
+      },
+      {
+        "etiqueta": "<a>",
+        "descripcion": "La etiqueta de ancla `<a>` se usa para crear hipervínculos. Su atributo más importante es `href`, que especifica la URL de destino. Por ejemplo, `<a href=\"https://google.com\">Ir a Google</a>`."
+      },
+      {
+        "etiqueta": "<strong>",
+        "descripcion": "La etiqueta `<strong>` se usa para marcar texto que tiene una gran importancia o seriedad, como una advertencia. Los navegadores generalmente lo muestran en negrita para indicar su relevancia semántica."
+      },
+      {
+        "etiqueta": "<em>",
+        "descripcion": "La etiqueta `<em>` (de énfasis) se usa para dar énfasis a un texto. Los navegadores suelen mostrarlo en cursiva. Se diferencia de `<i>` en que `<em>` tiene un significado semántico de énfasis."
+      }
+    ],
+    "multimedia_y_listas": {
+      "imagenes": [
+        {
+          "etiqueta": "<img>",
+          "descripcion": "La etiqueta `<img>` se usa para incrustar imágenes en una página. Es una etiqueta vacía (no tiene cierre). Sus atributos más importantes son `src` (la ruta de la imagen) y `alt` (un texto alternativo que describe la imagen para accesibilidad y en caso de que la imagen no cargue)."
+        }
+      ],
+      "listas": [
+        {
+          "etiqueta": "<ul>",
+          "descripcion": "La etiqueta `<ul>` (Unordered List) crea una lista no ordenada, donde cada elemento se muestra típicamente con una viñeta. Cada elemento de la lista debe estar dentro de una etiqueta `<li>`."
+        },
+        {
+          "etiqueta": "<ol>",
+          "descripcion": "La etiqueta `<ol>` (Ordered List) crea una lista ordenada, donde cada elemento se numera automáticamente (1, 2, 3...). Al igual que con `<ul>`, cada elemento de la lista debe estar dentro de una etiqueta `<li>`."
+        },
+        {
+          "etiqueta": "<li>",
+          "descripcion": "La etiqueta `<li>` (List Item) define un elemento individual dentro de una lista, ya sea ordenada (`<ol>`) o no ordenada (`<ul>`). Es el contenedor para el contenido de cada punto de la lista."
+        }
+      ]
+    },
+    "html_semantico": {
+      "concepto": {
+        "descripcion": "El HTML semántico consiste en usar etiquetas HTML que comunican el significado y el propósito de su contenido, tanto a los navegadores como a los desarrolladores y a las tecnologías de asistencia (como lectores de pantalla). Mejora el SEO y la accesibilidad de la web."
+      },
+      "etiquetas_principales": [
+        {
+          "etiqueta": "<header>",
+          "descripcion": "Representa un grupo de ayudas introductorias o de navegación. Puede contener el logo del sitio, un formulario de búsqueda, el título principal y la navegación principal."
+        },
+        {
+          "etiqueta": "<nav>",
+          "descripcion": "La etiqueta `<nav>` se usa para definir el bloque de navegación principal de la página, como el menú principal que enlaza a las diferentes secciones del sitio."
+        },
+        {
+          "etiqueta": "<main>",
+          "descripcion": "La etiqueta `<main>` especifica el contenido principal o central del `<body>` de un documento. El contenido dentro de `<main>` debe ser único para ese documento y no debe repetirse en otras páginas, como las barras laterales o los pies de página."
+        },
+        {
+          "etiqueta": "<footer>",
+          "descripcion": "Define el pie de página de un documento o una sección. Generalmente contiene información sobre el autor, datos de copyright, enlaces a políticas de privacidad o un mapa del sitio."
+        }
+      ]
+    }
+  }
+}
