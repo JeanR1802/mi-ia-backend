@@ -3,7 +3,6 @@ import json
 import faiss
 import numpy as np
 import google.generativeai as genai
-from sentence_transformers import SentenceTransformer
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
@@ -17,10 +16,7 @@ genai.configure(api_key=GOOGLE_API_KEY)
 model_gen = genai.GenerativeModel('gemini-1.5-flash-latest')
 print("Conexión con Gemini establecida.")
 
-# Configuración de la memoria (SentenceTransformer)
-print("Cargando modelo para la memoria (embeddings)...")
-model_emb = SentenceTransformer('all-MiniLM-L6-v2')
-print("Modelo de memoria cargado.")
+
 
 # --- CARGAR LA MEMORIA PERSISTENTE ---
 print("\nCargando memoria persistente desde archivos...")
